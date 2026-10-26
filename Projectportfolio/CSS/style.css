@@ -1,0 +1,270 @@
+:root{
+    --primarycolor: rgb(128, 128, 189);
+    --secondarycolor: rgb(92, 92, 148);
+    --thirdcolor: rgb(141, 141, 182);
+    --fourthcolor: rgb(157, 157, 207);
+    --backgroundcolor: rgb(69, 70, 76);
+}
+body{
+    background-color: var(--backgroundcolor);
+}
+header{
+    border: 1rem solid var(--primarycolor);
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+header > h1{
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 1rem;
+}
+ul{
+    margin-left: 10rem;
+    padding: 1rem;
+    background-color: white;
+    border: 6px solid var(--primarycolor);
+    border-radius: 8px;
+}
+ul > a:hover{
+    background-color: var(--thirdcolor);
+}
+ul > a{
+    border-radius: 1rem;
+    border: 3px solid var(--primarycolor);
+    padding: 10px;
+}
+#portfoliologo{
+    width: 10%;
+}
+main{
+    border: 1rem solid var(--primarycolor);
+    background-color: white;
+    border-radius: 2rem;
+}
+.introductiealgemeen{
+    margin-bottom: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Introductie{
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+}
+.introductiealgemeen > img{
+    border: 5px solid var(--primarycolor);
+    border-radius: 5rem;
+    position: relative;
+    top: 4rem;
+    right: 2rem;
+    width: 20%;
+}
+.projectenenandere{
+    margin-top: 1%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.vaardigheden{
+    border: 5px solid var(--primarycolor);
+    background-color: white;
+    border-radius: 1rem;
+    padding-top: 2%;
+    padding-right: 5%;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+}
+.vaardigheden:hover{
+    background-color: var(--secondarycolor);
+}
+.vaardigheden > a{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.vaardigheden > img{
+    width: 40%;
+}
+.mijnprojecten{
+    border: 5px solid var(--primarycolor);
+    background-color: white;
+    border-radius: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-top: 2%;
+    padding-right: 5%;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+}
+.mijnprojecten:hover{
+    background-color: var(--secondarycolor);
+}
+.mijnprojecten > a{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.mijnprojecten > img{
+    width: 50%;
+}
+.page4{
+    border: 5px solid var(--primarycolor);
+    background-color: white;
+    border-radius: 1rem;
+    padding-right: 5%;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.page4:hover{
+    background-color: var(--secondarycolor);
+}
+.page4 > a{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.page4 > img{
+    width: 60%;
+}
+footer{
+    border: 1rem solid var(--primarycolor);
+    margin-top: 1%;
+    border-radius: 1rem;
+    background-color: white;
+}
+footer > a,h4{
+    position: relative;
+    left: 2rem;
+    top: 1rem;
+    width: 20%;
+}
+footer > p{
+    display: flex;
+    justify-content: right;
+    position: relative;
+    right: 2rem;
+    bottom: 1rem;
+}
+.contactform{
+    margin-left: 2rem;
+    padding: 1rem;
+}
+.vaardighedentabel{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 26rem;
+}
+table{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    background-color: var(--fourthcolor);
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-left: 30%;
+    margin-bottom: 2rem;
+}
+table > tr,th{
+    margin-bottom: 1rem;
+    padding-right: 2rem;
+}
+.graduationaward{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.graduationaward > img{
+    width: 5%;
+    height: 10%;
+}
+.portfolioproject,.Geenproject{
+    border: 5px solid var(--primarycolor);
+    background-color: white;
+    border-radius: 2rem;
+    width: 20%;
+    position: relative;
+    left: 2rem;
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.portfolioproject:hover, .Geenproject:hover{
+    background-color: var(--secondarycolor);
+}
+.alleprojecten{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+main > a{
+    position: relative;
+    left: 2rem;
+}
+.portfolioproject > img{
+    width: 30%;
+}
+@media (max-width: 600px){
+    .introductiealgemeen > img{
+        height: 200px;
+    }
+    header{
+        width: 115%;
+    }
+    header > img{
+        position: relative;
+        top: 15px;
+        height: 90px;
+    }
+    main{
+        width: 115%;
+    }
+    footer{
+        width: 115%;
+    }
+    .projectenenandere{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+    }
+    .vaardigheden,.mijnprojecten,.page4{
+        margin-top: 1rem;
+    }
+    header,main,footer{
+        background-color: var(--secondarycolor);
+    }
+    table{
+        position: relative;
+        right: 50px;
+        width: 300px;
+    }
+    .portfolioproject > img{
+        height: 80px;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+    }
+    .vaardighedentabel{
+        position: relative;
+        left: 1px;
+    }
+    .vaardighedentabel > table{
+        width: 70%;
+    }
+}
